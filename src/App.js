@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CounterApp from './CounterApp';
+import CounterAppLegacy from './CounterAppLegacy';
+import CounteAppMultipleReduceNew from './CounteAppMultipleReduceNew'
+import CounterAppMultipleReducers from './CounterAppMultipleReducers'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Single Reducer</h1>
+      <h2>New Reducer</h2>
+      <CounterApp/>
+      <h2>Legacy Reducer</h2>
+      <CounterAppLegacy/>
+      
+      <h1>Multiple Reducer</h1>
+      <h2>New Reducer</h2>
+      <CounteAppMultipleReduceNew/>
+      
+      <h2>Legacy Reducer</h2>
+      <CounterAppMultipleReducers/>
+    </>
   );
 }
 
